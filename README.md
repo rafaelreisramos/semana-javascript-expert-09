@@ -18,13 +18,13 @@ Construindo um widget de chatbot embarcado que roda totalmente no navegador, exp
 - [Objetivo](#-objetivo)
 - [Recursos Principais](#-recursos-principais)
 - [Arquitetura e Estrutura do Widget](#-arquitetura-e-estrutura-do-widget)
-- [Pré-requisitos](#-pre-requisitos)
-- [Instalação Rápida](#-instalacao-rapida)
+- [Pré-requisitos](#-pré-requisitos)
+- [Instalação Rápida](#-instalação-rápida)
 - [Embutindo o Widget em Outro Site](#-embutindo-o-widget-em-outro-site)
-- [Customização](#-customizacao)
-- [Limitações e Avisos](#-limitacoes-e-avisos)
+- [Customização](#-customização)
+- [Limitações e Avisos](#-limitações-e-avisos)
 - [FAQ](#-faq)
-- [Referências](#-referencias)
+- [Referências](#-referências)
 
 ---
 
