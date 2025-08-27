@@ -128,7 +128,8 @@ Conteúdo inicial / comportamento:
 - `systemPrompt.txt`: instruções de sistema para o modelo.
 - `chatbot-config.json`: metadados (nome, avatar, cores, welcomeBubble etc).
 
-## ⚠️ Limitações e Avisos
+<!--## ⚠️ Limitações e Avisos-->
+<h2 id="-limitações-e-avisos">⚠️ Limitações e Avisos</h2>
 
 - As Chrome AI / Prompt APIs ainda são experimentais e podem mudar ou exigir flags.
 - Recursos offline dependem do suporte do navegador / hardware local.
