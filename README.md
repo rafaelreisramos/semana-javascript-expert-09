@@ -1,7 +1,7 @@
 <div align="center">
 
 ![JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow)
-![Last Commit](https://img.shields.io/github/last-commit/ErickWendel/semana-javascript-expert09)
+![Last Commit](https://img.shields.io/github/last-commit/rafaelreisramos/semana-javascript-expert-09)
 
 # Chatbot Inteligente 100% Offline com Prompt API do Chrome
 
@@ -17,15 +17,14 @@ Construindo um widget de chatbot embarcado que roda totalmente no navegador, exp
 - [Preview](#-preview)
 - [Objetivo](#-objetivo)
 - [Recursos Principais](#-recursos-principais)
-- [Arquitetura e Estrutura](#-arquitetura-e-estrutura)
-- [Pré-requisitos](#-pré-requisitos)
-- [Instalação Rápida](#-instalação-rápida)
-- [Executando](#-executando)
+- [Arquitetura e Estrutura do Widget](#-arquitetura-e-estrutura-do-widget)
+- [Pré-requisitos](#-pre-requisitos)
+- [Instalação Rápida](#-instalacao-rapida)
 - [Embutindo o Widget em Outro Site](#-embutindo-o-widget-em-outro-site)
-- [Customização](#-customização)
-- [Limitações e Avisos](#-limitações-e-avisos)
-- [Roadmap / Próximos Passos](#-roadmap--próximos-passos)
+- [Customização](#-customizacao)
+- [Limitações e Avisos](#-limitacoes-e-avisos)
 - [FAQ](#-faq)
+- [Referências](#-referencias)
 
 ---
 
@@ -142,6 +141,22 @@ Conteúdo inicial / comportamento:
 **Preciso de servidor backend?** Não para o núcleo demonstrado; tudo roda no cliente.
 
 **Como altero o prompt inicial?** Edite `botData/systemPrompt.txt`.
+
+## 📚 Referências
+
+- [Consenso entre navegadores sobre a PromptAPI](https://chromestatus.com/feature/5134603979063296?_gl=1*8vjss6*_ga*ODUwNTYyMjczLjE3NTYyMTMxMjg.*_ga_37GXT4VGQK*czE3NTYyMTUyMjYkbzIkZzEkdDE3NTYyMTU0OTckajQ0JGwwJGgw)
+- [Web Agents na Web com Jason Meyes](https://x.com/jason_mayes?lang=en&_gl=1*1n48vxk*_ga*ODUwNTYyMjczLjE3NTYyMTMxMjg.*_ga_37GXT4VGQK*czE3NTYyMTUyMjYkbzIkZzEkdDE3NTYyMTU0OTckajQ0JGwwJGgw)
+- [Hugging face](https://huggingface.co/webml-community?_gl=1*rnrlo3*_ga*ODUwNTYyMjczLjE3NTYyMTMxMjg.*_ga_37GXT4VGQK*czE3NTYyMTUyMjYkbzIkZzEkdDE3NTYyMTU0OTckajQ0JGwwJGgw)
+- [Text to Speech no navegador](https://x.com/jason_mayes?lang=en&_gl=1*1n48vxk*_ga*ODUwNTYyMjczLjE3NTYyMTMxMjg.*_ga_37GXT4VGQK*czE3NTYyMTUyMjYkbzIkZzEkdDE3NTYyMTU0OTckajQ0JGwwJGgw)
+- [DeepSeek no Navegador](https://huggingface.co/spaces/webml-community/deepseek-r1-webgpu?_gl=1*1n71wse*_ga*ODUwNTYyMjczLjE3NTYyMTMxMjg.*_ga_37GXT4VGQK*czE3NTYyMTUyMjYkbzIkZzEkdDE3NTYyMTU0OTckajQ0JGwwJGgw)
+- [APIs de Web AI no Chrome](https://developer.chrome.com/docs/ai/built-in?hl=pt-br&_gl=1*1n71wse*_ga*ODUwNTYyMjczLjE3NTYyMTMxMjg.*_ga_37GXT4VGQK*czE3NTYyMTUyMjYkbzIkZzEkdDE3NTYyMTU0OTckajQ0JGwwJGgw)
+- [Web AI demos](https://chrome.dev/web-ai-demos/?_gl=1*1n71wse*_ga*ODUwNTYyMjczLjE3NTYyMTMxMjg.*_ga_37GXT4VGQK*czE3NTYyMTUyMjYkbzIkZzEkdDE3NTYyMTU0OTckajQ0JGwwJGgw)
+- [Build a local and offline-capable chatbot with WebLLM](https://web.dev/articles/ai-chatbot-webllm)
+- [Jason Mayes WebAIAgent GitHub repository](https://github.com/jasonmayes/WebAIAgent)
+- [Google Chrome Built-in AI Challenge](https://googlechromeai.devpost.com/?linkId=11071015)
+- [Google Chrome Built-in AI Challenge Winners](https://developer.chrome.com/blog/ai-challenge-winners)
+- [Google Chrome Built-in AI Challenge Projects Gallery](https://googlechromeai.devpost.com/project-gallery)
+- [Chrome for Developers Blog](https://developer.chrome.com/blog)
 
 ---
 
