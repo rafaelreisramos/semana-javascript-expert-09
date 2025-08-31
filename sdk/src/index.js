@@ -10,6 +10,7 @@ import { ChatbotController } from './controllers/chatBotController.js';
         fetch('/sdk/ew-chatbot.html').then(r => r.text()),
         fetch('/botData/systemPrompt.txt').then(r => r.text()),
         fetch('/botData/chatbot-config.json').then(r => r.json()),
+	fetch('./llms.txt').then(r => r.text()),
     ]);
     const style = document.createElement('style');
     style.textContent = css;
@@ -23,7 +24,7 @@ import { ChatbotController } from './controllers/chatBotController.js';
 
     const chatbotView = new ChatbotView(config);
     const controller = new ChatbotController({ chatbotView, promptService });
-    const text = systemPrompt.concat('\n', '')
+    const text = systemPrompt.concat('\n', llmsTxt)
     controller.init({
         firstBotMessage: config.firstBotMessage,
         text,
