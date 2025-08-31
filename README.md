@@ -79,6 +79,24 @@ sdk/
 - Navegador **Chrome** (versão compatível com as AI / Prompt APIs experimentais).
 - Habilitar flags experimentais:
   - [chrome://flags/#prompt-api-for-gemini-nano](chrome://flags/#prompt-api-for-gemini-nano)
+- Verificar se o seu dispositívo é compatível:
+  - [chrome://on-device-internals](chrome://on-device-internals): em `Model Status -> Foundational model criteria` a propriedade `device capable` deve ter uma valor `true`.
+- Carregar o modelo pela primeira vez através do console do browser usando o código a seguir. O modelo tem cerca de 4GB e estará disponível quando a resposta for `available`.
+
+```js
+setInterval(async () => console.log(await LanguageModel.availability()), 500)
+
+const ai = await LanguageModel.create({
+  expectedInputLanguages: ['pt'],
+  monitor(m) {
+    m.addEventListener('downloadprogress', (e) => {
+      console.log(`Downloaded ${e.loaded * 100}%`)
+    })
+  },
+})
+```
+
+- Gerar o arquivo `llms.txt` e colocar na diretório raiz do projeto. Uma opção para gerar este arquivo é usar o site [Wordlift](https://wordlift.io/generate-llms-txt/). Você pode revisar o arquivo final e também adicionar textos e faqs para facilitar a interpretação da inteligência artificial.
 
 ## ⚡ Instalação Rápida
 
@@ -142,6 +160,25 @@ Conteúdo inicial / comportamento:
 **Preciso de servidor backend?** Não para o núcleo demonstrado; tudo roda no cliente.
 
 **Como altero o prompt inicial?** Edite `botData/systemPrompt.txt`.
+
+## Desafios adicionais
+
+<ol>
+  <li>Baixar o modelo mediante à autorização dos usuários</li>
+  <ul>
+    <li>Pergunte ao usuário se ele deseja baixar o modelo, verificar que se caso o modelo não esteja disponível na máquina do cliente, para que no chat, ele clique em um botão, inicie o download e então o notifique que acabou.</li>
+    <li>verificar que se caso o modelo não esteja disponível na máquina do cliente, para que no chat, ele clique em um botão, inicie o download e então o notifique que acabou</li>
+  </ul>
+  <li>Tornar disponível em outros navegadores</li>
+  Se o cliente não está no Google Chrome, você pode trocar o modelo, usar o Hugging face ou até o modelo do Gemma do google e seguir o mesmo processo, perguntando se ele deseja baixar o modelo.
+
+  <li>Tornar disponível em computadores incompatíveis / com menos poder de processamento</li>
+  Implementar um backend para consumir as APIs gratuitas de AI, os modelos menores do Gemma do Google para responder aos usuários:
+    <ul>
+      <li>Recomendação é usar o <a href='https://openrouter.ai/'>OpenRouter</a>, um agregador de modelos de IA que funcionam na nuvem. Lá lá eles deixam você usar APIs de forma gratuita, com alguns limites mas pelos meus testes funciona muito bem.</li>
+      <li>Dar uma olhada na <a href=https://openrouter.ai/docs/community/open-ai-sdk>documentação</a> para ver como integrar com o Node.js e garantir que suas chaves não vão ficar expostas no frontend.</li>
+    </ul>
+</ol>
 
 ## 📚 Referências
 
